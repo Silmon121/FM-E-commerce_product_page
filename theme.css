@@ -127,11 +127,41 @@ nav .icons-container{
     width: 18%;
     height: 80%;
     cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 20px;
+}
+.thumbnail-image-container:hover{
+    width: 18%;
+    height: 80%;
+    cursor: pointer;
+    border: 3px solid var(--orange);
+    background-color: var(--light_grayish_blue);
+    border-radius: 20px;
+}
+.active{
+    width: 18%;
+    height: 80%;
+    cursor: pointer;
+    border: 3px solid var(--orange);
+    background-color: var(--light_grayish_blue);
+    border-radius: 20px;
 }
 .thumbnail-image-container img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 16px;
+}
+.active img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    opacity: 0.4;
+}
+.thumbnail-image-container:hover img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    opacity: 0.4;
 }
 /* PRODUCT INFO SECTION */
 .product-info-container{
