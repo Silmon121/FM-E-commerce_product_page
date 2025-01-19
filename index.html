@@ -15,6 +15,40 @@
   </style>
 </head>
 <body>
+  <div id="overlay" class="overlay">
+    <div class="overlay-container">
+      <div class="overlay-container-exit">
+        <div id="exit" class="exit-icon-container">
+          <img src="images/icon-close.svg" alt="Close_icon.svg">
+        </div>
+      </div>
+      <div class="overlay-container-main">
+        <div class="overlay-main-img-container">
+          <div class="arrow-container-left">
+            <img src="images/icon-previous.svg" alt="Previous_icon.svg">
+          </div>
+          <img id="main_img-overlay" src="images/image-product-1.jpg" alt="Product-1.jpg">
+          <div class="arrow-container-right">
+            <img src="images/icon-next.svg" alt="Next_icon.svg">
+          </div>
+        </div>
+      </div>
+      <div class="overlay-container-thumbnails">
+        <span id="thumbnail1-overlay" class="overlay-container-thumbnail active">
+              <img src="images/image-product-1-thumbnail.jpg" alt="product_thumbnail_1.jpg">
+            </span>
+        <span id="thumbnail2-overlay" class="overlay-container-thumbnail">
+              <img src="images/image-product-2-thumbnail.jpg" alt="product_thumbnail_2.jpg">
+            </span>
+        <span id="thumbnail3-overlay" class="overlay-container-thumbnail">
+              <img src="images/image-product-3-thumbnail.jpg" alt="product_thumbnail_3.jpg">
+            </span>
+        <span id="thumbnail4-overlay" class="overlay-container-thumbnail">
+              <img src="images/image-product-4-thumbnail.jpg" alt="product_thumbnail_4.jpg">
+            </span>
+      </div>
+    </div>
+  </div>
   <header>
     <nav>
       <div class="logo-menu-container">
@@ -86,12 +120,12 @@
             </div>
             <div class="product-details-buttons-container">
               <div class="quantity-button">
-                <button>
-                  <img src="images/icon-minus.svg" alt="minus.icon">
+                <button onclick="product_quantity_decrease()">
+                  <img id="minus-icon" src="images/icon-minus.svg" alt="minus.icon">
                 </button>
-                <p>0</p>
-                <button>
-                  <img src="images/icon-plus.svg" alt="plus.icon">
+                <p id="product_quantity">0</p>
+                <button onclick="product_quantity_increase()">
+                  <img id="plus-icon" src="images/icon-plus.svg" alt="plus.icon">
                 </button>
               </div>
               <button class="add-button">
@@ -116,4 +150,5 @@
   </footer>
 </body>
 <script src="showcase_dynamics.js"></script>
+<script src="button_dynamics.js"></script>
 </html>
